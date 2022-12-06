@@ -22,20 +22,20 @@ const DYNAMIC_CACHE   = 'dynamic-V0.1';
 const INMUTABLE_CACHE = 'inmutable-V0.1';
 
 const APP_SHELL = [
-    '/',
-    'index.html',
-    'style.css',
-    'assets/ask.jpg',
-    'assets/endian-wifi_features-secure.svg',
-    'assets/news-svgrepo-com.svg',
-    'assets/question-svgrepo-com.svg',
-    'script.js'
+    './',
+    './index.html',
+    './style.css',
+    './assets/ask.jpg',
+    './assets/endian-wifi_features-secure.svg',
+    './assets/news-svgrepo-com.svg',
+    './assets/question-svgrepo-com.svg',
+    './script.js'
 ];
 
 const APP_SHELL_INMUTABLE = [
    // 'https://fonts.googleapis.com/css2?family=Rubik+Mono+One:300,400',
    // 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css',
-    'style.css'
+    './style.css'
 ];
 
 
