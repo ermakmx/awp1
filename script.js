@@ -5,9 +5,7 @@ const numeroNoticias = 9;
 
 let initNews = document.getElementById('noticiasContainer');
 let conjuntoNews = '';
-fetch(`https://newsapi.org/v2/everything?q=${issue}&language=es&pageSize=${numeroNoticias}&apiKey=${ak}`,{
-  credentials: 'include'
-})
+fetch(`https://newsapi.org/v2/everything?q=${issue}&language=es&pageSize=${numeroNoticias}&apiKey=${ak}`)
 .then(response => response.json()).then((data)=>{
     data.articles.forEach(element => {
        // console.log(element);
