@@ -10,7 +10,7 @@ fetch(`https://newsapi.org/v2/everything?q=${issue}&language=es&pageSize=${numer
     data.articles.forEach(element => {
        // console.log(element);
           
-        initNews.innerHTML+=  `<div class="col">
+        initNews.innerHTML = initNews.innerHTML +  `<div class="col">
         <div class="card"><a href="${element.url}">
         <img src="${element.urlToImage}"  class="card-img-top" alt="image"></a>
         <div class="card-body">
@@ -29,3 +29,16 @@ fetch(`https://newsapi.org/v2/everything?q=${issue}&language=es&pageSize=${numer
 }).catch(e => {
     console.log(e);
 })
+
+var url = window.location.href;
+var swlocation = 'sw.js'; 
+// Añadir el SW
+if ( navigator.serviceWorker ) {
+
+    if ( url.includes('localhost') ) {
+        swlocation = '/sw.js';
+    }
+
+    
+    navigator.serviceWorker.register(swlocation);
+}
