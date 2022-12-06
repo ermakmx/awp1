@@ -2,6 +2,7 @@
 const ak = 'c721a255bcbb4ec9a4b47a29157435af';
 const issue = 'security';
 const numeroNoticias = 9;
+const fetch = require('node-fetch');
 
 let initNews = document.getElementById('noticiasContainer');
 let conjuntoNews = '';
